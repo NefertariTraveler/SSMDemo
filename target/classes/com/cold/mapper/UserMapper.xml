@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cold.mapper.UserMapper">
+
+    <select id="queryAll" resultType="user">
+        select u_id id,u_name name,u_birthday birthday,u_sex sex,u_address address from `users`
+    </select>
+
+</mapper>
